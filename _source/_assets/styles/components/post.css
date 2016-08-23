@@ -54,6 +54,7 @@
 }
 
 .c-post pre,
+.c-post pre[class*=language-],
 .c-post ul,
 .c-post ol {
   margin-bottom: 1.5rem;

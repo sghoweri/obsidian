@@ -21,7 +21,7 @@ Styles should be open for extension, but closed for modification. Avoid styles t
 
 #### Variables & Computation
 
-Variables in CSS4 are the same in almost any other language, they store a value. They’re great for arranging the common font families, colors, spacing you’ll use and want to amend quickly across your project. All global variables should get defined and collected in their own partial. Computation via `calc()` should ideally be moved into a variable.
+Variables in CSS4 are the same in almost any other language, they store a value. They’re great for arranging the common font families, colors, and spacing you’ll use and want to amend quickly across your project. All global variables should get defined and collected in their own partial. Computation via `calc()` should ideally be moved into a variable.
 
 #### Important
 
@@ -49,9 +49,10 @@ References: [_Code Guide_](http://codeguide.co/#css-declaration-order) from Mark
 
 ### Linting
 
-Obsidian is using [Stylelint](http://stylelint.io/) as it's linter. It lints for very specific formatting, a few highlights:
+Obsidian is using [Stylelint](http://stylelint.io/) as its linter. It lints for very specific formatting; here are a few highlights:
 
 - Prefer Single Quotes
 - Space After Colon
+- No Leading Zeroes
 - No IDs
 - Single Quotes inside Functions

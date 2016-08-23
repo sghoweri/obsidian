@@ -8,7 +8,7 @@ Classes in Obsidian are named with purpose.
 
 ### Prefixes
 
-Objects, components, and utilities are all prefixed (`.o-`, `.c-`, `.u-`). This leads to clear classes names, class names we can search for an `outline` for QA. It also puts a hard line between objects and components.
+Objects, components, and utilities are all prefixed (`.o-`, `.c-`, `.u-`). This leads to clear class names, class names we can search for an `outline` for QA. It also puts a hard line between objects and components.
 
 #### Exceptions
 
@@ -16,7 +16,7 @@ Elements are not prefixed (ie. `.list`, `.table`) because they extend responsive
 
 ### Suffixes
 
-Obsidian uses responsive suffixes `@sm`. Responsive targeting shouldn't be a modifier and falls in it's own category. Obsidian defaults to a mobile first approach to CSS, meaning that classes without suffixes apply their styles to all screen sizes and ascend upward for styling per suffix.
+Obsidian uses responsive suffixes `@sm`. Responsive targeting shouldn't be a modifier and falls in its own category. Obsidian defaults to a mobile first approach to CSS, meaning that classes without suffixes apply their styles to all screen sizes and ascend upward for styling per suffix.
 
 `@sm`, `@md`, `@lg` are the given suffixes in Obsidian.
 
@@ -32,9 +32,9 @@ Obsidian uses responsive suffixes `@sm`. Responsive targeting shouldn't be a mod
 
 #### Block Names
 
-Blocks can be described as squares you can draw around a piece of UI or the root of a module (visual or conceptual). Most block names should be really simple, avoid abbreviating or complicating. If two words are needed to describe a block separate them with a single hyphen `-`.
+Blocks can be described as squares you can draw around a piece of UI or the root of a module (visual or conceptual). Most block names should be really simple, so avoid abbreviating or complicating. If two words are needed to describe a block separate them with a single hyphen `-`.
 
-Blocks are the basis of a name, they can have both a modifier and a element attached (`.block__element--modifier`) or have just have one (either a modifier `.block--modifier` or an element `.block__element`.
+Blocks are the basis of a name. They can have both a modifier and a element attached (`.block__element--modifier`) or have just have one (either a modifier `.block--modifier` or an element `.block__element`.
 
 Utilities in Obsidian get a specific block name that describes their function. For example `d` abbreviating `display` or `bkg` abbreviating `background`.
 

@@ -33,6 +33,6 @@
 
 code[class*=language-],
 pre[class*=language-] {
-  font-family: inherit !important;
+  font-family: var(--ff-mono);
   font-weight: 400;
 }
