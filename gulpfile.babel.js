@@ -198,12 +198,19 @@ const watch = () => {
 }
 
 // Deploy
-//
+// ---------------------
 
-const deploy = () => {
+const pages = () => {
   return gulp.src('./_site/**/*')
     .pipe(ghPages())
 }
+
+const copy = () => {
+  return gulp.src('./CNAME')
+    .pipe(gulp.dest(paths.build))
+}
+
+const deploy = gulp.series(jekyll, copy, pages)
 
 // Default Tasks
 // ---------------------
