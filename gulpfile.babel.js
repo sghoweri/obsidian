@@ -3,6 +3,7 @@ import del from 'del'
 import rename from 'gulp-rename'
 import plumber from 'gulp-plumber'
 import size from 'gulp-size'
+import ghPages from 'gulp-gh-pages'
 import svgmin from 'gulp-svgmin'
 import svgstore from 'gulp-svgstore'
 import cheerio from 'gulp-cheerio'
@@ -196,6 +197,11 @@ const watch = () => {
   gulp.watch(paths.img.src, images)
 }
 
+// Deploy
+//
+
+const deploy = gulp.src('_site/').pipe(ghPages())
+
 // Default Tasks
 // ---------------------
 
@@ -214,7 +220,8 @@ export {
   connect,
   jekyll,
   rejekyll,
-  examples
+  examples,
+  deploy
 }
 
 export default gulp.series(clean, jekyll, gulp.parallel(build, connect, watch))
