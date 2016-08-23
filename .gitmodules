@@ -1,4 +1,4 @@
 [submodule "obsidian"]
 	path = _source/obsidian
-	url = https://github.com/obsidiancss/obsidian
+	url = https://github.com/charlespeters/obsidian
 	branch = master
