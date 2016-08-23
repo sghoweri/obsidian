@@ -4,12 +4,13 @@ email: charlespeters42@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Obsidian.css is a modular CSS library that focuses on code common to most projects.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://obsidiancss.github.io" # the base hostname & protocol for your site
-twitter_username: obsidiancss
-github_username: obsidiancss
-npm_package: obsidian.css
+url: "http://charlespeters.net/obsidian"
 source: _source
 
+# Social
+github: https://github.com/charlespeters/obsidian
+npm: https://www.npmjs.com/package/obsidian.css
+twitter: https://twitter.com/obsidiancss
 
 # Package Info
 version: v2.1.3

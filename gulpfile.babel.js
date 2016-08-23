@@ -201,7 +201,7 @@ const watch = () => {
 //
 
 const deploy = () => {
-  return gulp.src('_site/')
+  return gulp.src('./_site/**/*')
     .pipe(ghPages())
 }
 

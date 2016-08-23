@@ -7,7 +7,7 @@ layout: default
     <div class="c-pane--flat u-center u-px2 u-py6">
       <header class="post-header u-py3">
         <div class="u-mb4">
-          <img src="/assets/dist/img/obsidian-logo@2x.png" class="c-header__logo--lg u-bl u-mxa u-mb5" alt="Obsidian.css Logo" />
+          <img src="{{ '/assets/dist/img/obsidian-logo@2x.png' | prepend: site.url }}" class="c-header__logo--lg u-bl u-mxa u-mb5" alt="Obsidian.css Logo" />
           <h2 class="h4 u-mb2 c-header__title">{{ page.notTitle }}</h2>
           <p class="h6 u-ltgray">{{ page.description }}</p>
         </div>
@@ -20,7 +20,7 @@ layout: default
         {% for p in pages %}
           {% if p.title %}
           <li class="u-inbl u-px3 u-py3 u-py2@md">
-            <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+            <a class="page-link" href="{{ p.url | prepend: site.url }}">{{ p.title }}</a>
           </li>
           {% endif %}
         {% endfor %}
