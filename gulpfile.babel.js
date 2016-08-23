@@ -200,7 +200,10 @@ const watch = () => {
 // Deploy
 //
 
-const deploy = gulp.src('_site/').pipe(ghPages())
+const deploy = () => {
+  return gulp.src('_site/')
+    .pipe(ghPages())
+}
 
 // Default Tasks
 // ---------------------
