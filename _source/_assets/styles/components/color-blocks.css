@@ -2,6 +2,8 @@
 
 .c-color-block {
   width: calc(50% - .5rem);
+  max-width: calc(50% - .5rem);
+  flex: 1 1 calc(50% - .5rem);
   border: 1px solid color(var(--litegray) a(25%));
 }
 
@@ -18,6 +20,7 @@
   .c-color-block {
     max-width: 11.125rem;
     width: 100%;
+    flex-basis: 11.125rem;
     border: 1px solid color(var(--litegray) a(25%));
   }
 
