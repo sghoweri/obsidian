@@ -5,6 +5,7 @@
 @import 'obsidian.css/lib/components';
 
 @import './components/example';
+@import './components/hacks';
 @import './components/post';
 @import './components/color-blocks';
 @import './components/header';

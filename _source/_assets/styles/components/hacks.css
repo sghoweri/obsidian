@@ -1,0 +1,9 @@
+.c-ex .c-tabs__pane {
+  height: 0;
+  font-size: 0;
+}
+
+.c-ex .c-tabs__pane.active {
+  height: auto;
+  font-size: 100%;
+}
