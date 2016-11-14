@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 notTitle: Obsidian.css
 description: A Modular CSS Library
 ---
